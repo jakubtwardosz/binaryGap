@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("binaryGap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfc2948d4c85ccfed1c8bf14482bf7a90cce73fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("binaryGap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("binaryGap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
