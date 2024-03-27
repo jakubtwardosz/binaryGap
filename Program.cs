@@ -1,13 +1,28 @@
 ﻿Console.Write("Enter a number: ");
 
-int n = int.Parse(Console.ReadLine());
-string m = string.Empty;
+int number = int.Parse(Console.ReadLine());
+int currentGapLength = 0;
+int maxGapLength = 0;
 
-while (n > 0)
+while (number > 0)
 {
-    int result = n % 2;
-    m = result.ToString() + m;
-    n = n / 2;
+    int result = number % 2;
+
+    if (result == 0)
+    {
+        currentGapLength++;
+    }
+    else
+    {
+        if (currentGapLength > maxGapLength)
+        {
+            maxGapLength = currentGapLength;
+        }
+
+        currentGapLength = 0;
+    }
+
+    number = number / 2;
 }
 
-Console.WriteLine("Binary: " + m);
+Console.WriteLine("Longest binary gap: " + maxGapLength);
